@@ -1,0 +1,52 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+modeLED                                                                           0x0502       4
+SegCode                                                                           0x0506      10
+ctrlRelays                                                                        0x0510       1
+ctrlMotors                                                                        0x0511       1
+ctrlBtns                                                                          0x0512       1
+MainMenu                                                                          0x0513      94
+SensorMenu                                                                        0x0571      94
+ActuatorMenu                                                                      0x05CF      94
+SetMenu                                                                           0x062D      94
+TempMenu                                                                          0x068B      94
+HumiMenu                                                                          0x06E9      94
+RelayMenu                                                                         0x0747      94
+MotorMenu                                                                         0x07A5      94
+LedMenu                                                                           0x0803      94
+Motor1Menu                                                                        0x0861      94
+Motor2Menu                                                                        0x08BF      94
+SingLedMenu                                                                       0x091D      94
+SevenSegLedMenu                                                                   0x097B      94
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+i                                                                                 R4,R5        2
+pmenu                                                                             R6,R7        2
+selectRow                                                                         R8,R9        2
+temp                                                                              R10,R11      2
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+displayLEDs                                                                       0x002DD     28
+displayLED7Seg                                                                    0x002F9     39
+offLED7Seg                                                                        0x00320     18
+LCD_WR_CMD                                                                        0x00332     10
+LCD_WR_DATA                                                                       0x0033C      6
+LCD_INIT                                                                          0x00342      6
+LCD_CLEAR                                                                         0x00348      3
+Print                                                                             0x0034B     43
+OneWireReset                                                                      0x00376     19
+OneWireWriteByte                                                                  0x00389     33
+OneWireReadByte                                                                   0x003AA     35
+readTemp                                                                          0x003CD     49
+showMenu                                                                          0x003FE     47
+ctrlDevice                                                                        0x0042D    193
+main                                                                              0x004EE    193
